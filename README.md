@@ -1,12 +1,7 @@
-# Equipe 10
-
-- Leonardo Yan de Sousa Jaques
-- Rafael Gornes Heuseler
-- Lucas Henrique Meira de Souza
-- Stefson Romário Sampaio Magalhães
-- Milton de Vargas Júnior(Anônimo)
+# Lucas Meira
 
 # desafio-backend-05-pdv
+
 ![](https://i.imgur.com/xG74tOh.png)
 
 # Desafio Módulo 5 - Backend
@@ -14,7 +9,6 @@
 Seja bem vindo(a) ao desafio do módulo 5.
 
 Sua tarefa como desenvolvedor(a) será criar uma API para um PDV (Frente de Caixa). Esse será um projeto piloto, ou seja, no futuro outras funcionalidades serão implementadas.
-
 
 **Importante 1: Sempre que a validação de uma requisição falhar, responda com código de erro e mensagem adequada à situação, ok?**
 
@@ -41,9 +35,9 @@ Você precisa criar um Banco de Dados PostgreSQL chamado `pdv`.
 
 ## **Requisitos obrigatórios**
 
--   A API a ser criada deverá acessar o banco de dados a ser criado `pdv` para persistir e manipular os dados de categorias, clientes, pedidos, produtos e usuários utilizados pela aplicação.
--   O campo id das tabelas no banco de dados deve ser auto incremento, chave primária e não deve permitir edição uma vez criado.
--   Qualquer valor monetário deverá ser representado em centavos (Ex.: R$ 10,00 reais = 1000)
+- A API a ser criada deverá acessar o banco de dados a ser criado `pdv` para persistir e manipular os dados de categorias, clientes, pedidos, produtos e usuários utilizados pela aplicação.
+- O campo id das tabelas no banco de dados deve ser auto incremento, chave primária e não deve permitir edição uma vez criado.
+- Qualquer valor monetário deverá ser representado em centavos (Ex.: R$ 10,00 reais = 1000)
 
 ## **Status Codes**
 
@@ -68,18 +62,18 @@ Abaixo, listamos os possíveis **_status codes_** esperados como resposta da API
 <summary><b>Banco de Dados</b></summary>
 <br>
 
-Crie as seguintes tabelas e colunas abaixo: 
+Crie as seguintes tabelas e colunas abaixo:
 
 **ATENÇÃO! Os nomes das tabelas e das colunas a serem criados devem seguir exatamente os nomes listados abaixo.**
 
--   usuarios
-    -   id
-    -   nome
-    -   email (campo único)
-    -   senha
--   categorias
-    -   id
-    -   descricao
+- usuarios
+  - id
+  - nome
+  - email (campo único)
+  - senha
+- categorias
+  - id
+  - descricao
 
 </details>
 
@@ -94,15 +88,15 @@ As categorias a seguir precisam ser previamente cadastradas para que sejam lista
 
 ## **Categorias**
 
--   Informática
--   Celulares
--   Beleza e Perfumaria
--   Mercado
--   Livros e Papelaria
--   Brinquedos
--   Moda
--   Bebê
--   Games
+- Informática
+- Celulares
+- Beleza e Perfumaria
+- Mercado
+- Livros e Papelaria
+- Brinquedos
+- Moda
+- Bebê
+- Games
 
 </details>
 
@@ -115,7 +109,7 @@ Essa é a rota que será utilizada para cadastrar um novo usuário no sistema.
 
 Critérios de aceite:
 
-    - Validar os campos obrigatórios: 
+    - Validar os campos obrigatórios:
         - nome
         - email
         - senha
@@ -162,7 +156,7 @@ Essa é a rota que permite o usuário logado atualizar informações de seu pró
 
 Critérios de aceite:
 
-    - Validar os campos obrigatórios: 
+    - Validar os campos obrigatórios:
         - nome
         - email
         - senha
@@ -191,27 +185,27 @@ Fazer deploy do projeto e disponibilizar a URL.
 <summary><b>Banco de Dados</b></summary>
 <br>
 
-Crie as seguintes tabelas e colunas abaixo: 
+Crie as seguintes tabelas e colunas abaixo:
 
 **ATENÇÃO! Os nomes das tabelas e das colunas a serem criados devem seguir exatamente os nomes listados abaixo.**
 
--   produtos
-    -   id
-    -   descricao
-    -   quantidade_estoque
-    -   valor
-    -   categoria_id
--   clientes
-    -   id
-    -   nome
-    -   email (campo único)
-    -   cpf (campo único) 
-    -   cep 
-    -   rua
-    -   numero
-    -   bairro
-    -   cidade
-    -   estado
+- produtos
+  - id
+  - descricao
+  - quantidade_estoque
+  - valor
+  - categoria_id
+- clientes
+  - id
+  - nome
+  - email (campo único)
+  - cpf (campo único)
+  - cep
+  - rua
+  - numero
+  - bairro
+  - cidade
+  - estado
 
 </details>
 
@@ -279,7 +273,7 @@ Critérios de aceite:
 
 #### `GET` `/produto/:id`
 
-Essa é a rota que permite o usuário logado obter um de seus produtos cadastrados.  
+Essa é a rota que permite o usuário logado obter um de seus produtos cadastrados.
 
 Critérios de aceite:
 
@@ -292,7 +286,7 @@ Critérios de aceite:
 
 #### `DELETE` `/produto/:id`
 
-Essa é a rota que será chamada quando o usuário logado quiser excluir um de seus produtos cadastrados.  
+Essa é a rota que será chamada quando o usuário logado quiser excluir um de seus produtos cadastrados.
 
 Critérios de aceite:
 
@@ -351,7 +345,7 @@ Essa é a rota que será chamada quando o usuário logado quiser listar todos os
 
 #### `GET` `/cliente/:id`
 
-Essa é a rota que será chamada quando o usuário logado quiser obter um de seus clientes cadastrados.  
+Essa é a rota que será chamada quando o usuário logado quiser obter um de seus clientes cadastrados.
 
 Critérios de aceite:
 
@@ -371,23 +365,22 @@ Critérios de aceite:
 <summary><b>Banco de Dados</b></summary>
 <br>
 
-Crie as seguintes tabelas e colunas abaixo: 
+Crie as seguintes tabelas e colunas abaixo:
 
 **ATENÇÃO! Os nomes das tabelas e das colunas a serem criados devem seguir exatamente os nomes listados abaixo.**
 
--   pedidos
-    -   id
-    -   cliente_id
-    -   observacao
-    -   valor_total
--   pedido_produtos
-    -   id
-    -   pedido_id
-    -   produto_id
-    -   quantidade_produto
-    -   valor_produto
--   produtos
-    -   produto_imagem
+- pedidos
+  - id
+  - cliente_id
+  - observacao
+  - valor_total
+- pedido_produtos
+  - id
+  - pedido_id
+  - produto_id
+  - quantidade_produto
+  - valor_produto
+- produtos - produto_imagem
 </details>
 
 ---
@@ -436,8 +429,8 @@ Critérios de aceite:
     -   Validar se existe cliente para o id enviado no corpo (body) da requisição.
     -   Validar se existe produto para cada produto_id informado dentro do array enviado no corpo (body) da requisição.
     -   Validar se existe a quantidade em estoque de cada produto existente dentro do array, de acordo com a quantidade informada no corpo (body) da requisição.
-    -   O pedido deverá ser cadastrado, apenas, se todos os produtos estiverem validados. 
-    -   Enviar e-mail para o cliente notificando que o pedido foi efetuado com sucesso.   
+    -   O pedido deverá ser cadastrado, apenas, se todos os produtos estiverem validados.
+    -   Enviar e-mail para o cliente notificando que o pedido foi efetuado com sucesso.
 
 </details>
 
@@ -453,31 +446,31 @@ Deveremos incluir um parâmetro do tipo query **cliente_id** para que seja poss�
 ```javascript
 // Resposta para listagem de pedido (body)
 [
-    {
-        "pedido": {
-            "id": 1,
-            "valor_total": 230010,
-            "observacao": null,
-            "cliente_id": 1
-        },
-        "pedido_produtos": [
-            {
-                "id": 1,
-                "quantidade_produto": 1,
-                "valor_produto": 10,
-                "pedido_id": 1,
-                "produto_id": 1
-            },
-            {
-                "id": 2,
-                "quantidade_produto": 2,
-                "valor_produto": 230000,
-                "pedido_id": 1,
-                "produto_id": 2
-            }
-        ]
-    }
-]
+  {
+    pedido: {
+      id: 1,
+      valor_total: 230010,
+      observacao: null,
+      cliente_id: 1,
+    },
+    pedido_produtos: [
+      {
+        id: 1,
+        quantidade_produto: 1,
+        valor_produto: 10,
+        pedido_id: 1,
+        produto_id: 1,
+      },
+      {
+        id: 2,
+        quantidade_produto: 2,
+        valor_produto: 230000,
+        pedido_id: 1,
+        produto_id: 2,
+      },
+    ],
+  },
+];
 ```
 
 Critérios de aceite:
@@ -503,11 +496,11 @@ Critérios de aceite:
 <summary><b>Aprimorar cadastro/atualização de produto</b></summary>
 <br>
 
-Deverão ser aprimorados o cadastro e a atualização de produto para permitir vincular uma imagem a um produto. 
+Deverão ser aprimorados o cadastro e a atualização de produto para permitir vincular uma imagem a um produto.
 Deverá ser criada uma coluna `produto_imagem` para que seja possível efetuar o vínculo entre a imagem e o produto.
 
 Critérios de aceite:
-    
+
     - O campo `produto_imagem` deve ser opcional, mas, em caso de ser enviado no corpo da requisição deveremos processar a imagem vinculada a essa propriedade e armazenar a imagem em um servidor de armazenamento (Supabase, Blackblaze, etc...)
     - Armazenar na coluna `produto_imagem` a URL que possibilita visualizar a imagem que foi efetuada upload para o servidor de armazenamento.
 
@@ -537,20 +530,18 @@ Deverá ser aprimorada a exclusão de produto para que quando o produto for excl
 Critérios de aceite:
 
     - Na exclusão do produto a imagem vinculada a este produto deverá ser excluída do servidor de armazenamento.
-    
-</details>
 
 </details>
 
+</details>
 
 ## Aulas úteis:
 
--   [Revisão](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/9c29ca80-51cc-4f74-86a3-d27cee05fc48)
--   [Git e fluxo de trabalho em equipe](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/2044890a-5d35-442a-85b1-f8481589a1a9)
--   [Deploy](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/9be7d540-8f4d-4922-9e42-663656bd2475)
--   [Envio de e-mails](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/9b85ed35-9833-444a-a424-80d6eeeeccbc)
--   [Validações e boas práticas](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/61394330-479c-42de-ba1c-176f712990e5)
--   [Upload de arquivos](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/f2821d48-b7b7-486a-8158-afacb145509f)
-
+- [Revisão](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/9c29ca80-51cc-4f74-86a3-d27cee05fc48)
+- [Git e fluxo de trabalho em equipe](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/2044890a-5d35-442a-85b1-f8481589a1a9)
+- [Deploy](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/9be7d540-8f4d-4922-9e42-663656bd2475)
+- [Envio de e-mails](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/9b85ed35-9833-444a-a424-80d6eeeeccbc)
+- [Validações e boas práticas](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/61394330-479c-42de-ba1c-176f712990e5)
+- [Upload de arquivos](https://aulas.cubos.academy/turma/503b31f6-db13-4a79-8c3f-132b3d44e96f/aulas/f2821d48-b7b7-486a-8158-afacb145509f)
 
 ###### tags: `back-end` `módulo 5` `nodeJS` `PostgreSQL` `API REST` `desafio`
