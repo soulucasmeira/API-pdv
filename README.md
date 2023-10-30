@@ -1,10 +1,5 @@
-# Equipe 10
+# Lucas Meira
 
-- Leonardo Yan de Sousa Jaques
-- Rafael Gornes Heuseler
-- Lucas Henrique Meira de Souza
-- Stefson Romário Sampaio Magalhães
-- Milton de Vargas Júnior(Anônimo)
 
 # desafio-backend-05-pdv
 ![](https://i.imgur.com/xG74tOh.png)
